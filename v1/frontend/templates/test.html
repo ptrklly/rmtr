@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Roomater</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="{% get_static_prefix %}css/base.css">
+	<link rel="stylesheet" href="{% get_static_prefix %}css/skeleton.css">
+	<link rel="stylesheet" href="{% get_static_prefix %}css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+<div class="container">
+	<div class="sixteen columns">
+		<h1 class="remove-bottom" style="margin-top: 40px">Roomater</h1>
+		<h5> Finding a roomate is as hard as dating. We make it easier.</h5>
+		<hr />
+	</div>
+	<div class="sixteen columns">
+		<h3>Get started</h3>
+		<p>Have a room? You can use us to:
+		<ul class="square">
+			<li>Make a survey based on popular roomate questions.</li>
+			<li>Post it to craigslist</li>
+			<li>Watch as applicants fill out your survey.  </li>
+		</ul>
+		Get started here: <button type="submit">Get Started!</button> 
+		</p>
+	</div>
+	<div class="sixteen columns">
+		<h3>More ideas</h3>
+		<p>We've got lots of ideas to make it easier to find a roomate, like:</p>
+		<ul class="square">
+			<li>A matching algorithm that predicts the likelihood you'll get along. You'll still need to meet folks in person, just like you would if you were dating them, but we think we can help out the process. </li>
+			<li>An easy way to collect answers from applicants for a room you're listing.</li>
+			<li>A connection to Facebook that will alert you when a friend or a friend-of-a-friend is looking for a roommate.</li>
+		</ul>
+	</div>
+	<div class="sixteen columns">
+		<h3>Get started</h3>
+		<p>The only feature we have right now is a way to create a survey you can include in your Craigslist post for applicants to your room. Have a room? Get started here: <button type="submit">Get Started!</button> </p>
+	</div>
+	<div class="sixteen columns">
+		<h3>Help us out</h3>
+		<p>Tell us what features you want and we'll email you when we've built them:</p>
+			<!-- Wrap each checkbox in a label, then give it the input and span for the text option -->
+		<form>	
+			<label for="regularCheckbox">
+			<input type="checkbox" id="regularCheckbox" value="checkbox 1" />
+			<span>Facebook integration</span>
+			</label>
+			<label for="regularCheckbox">
+			<input type="checkbox" id="regularCheckbox" value="checkbox 2" />
+			<span>A matchmaking algorithm</span>
+			</label>
+			<label for="regularCheckbox">
+			<input type="checkbox" id="regularCheckbox" value="checkbox 2" />
+			<span>A scheduler to help figure out when to show the place (assuming you have a room to show)</span>
+			</label>
+			<button type="submit">Sign Up!</button> 	
+		</form>
+	</div>
+</div><!-- container -->
+
+
+	<!-- JS
+	================================================== 
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="{% get_static_prefix %}js/tabs.js"></script>
+-->
+
+</body>
+</html>

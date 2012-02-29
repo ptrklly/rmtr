@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^index/$', 'frontend.views.index'),
 	url(r'^home/$', 'frontend.views.home'),
+	url(r'^test/$', 'frontend.views.test'),
 )
