@@ -4,6 +4,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-	url(r'^index/$', 'frontend.views.index'),
+	url(r'^base/$', 'frontend.views.base'),
 	url(r'^home/$', 'frontend.views.home'),
+	url(r'^create survey/$', 'frontend.views.createsurvey'),
+	url(r'^preview/$', 'frontend.views.preview'),
+	url(r'^dashboard/$', 'frontend.views.dashboard'),
 )
