@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block pages %}
+
+<div class="container">
+<div class="sixteen columns">
+<h3> This is a list of questions we'd like to ask people: </h3>
+{% if latest_poll_list %}
+    <ul class="square">
+    {% for poll in latest_poll_list %}
+        <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</div>
+</div>
+{% endblock pages %}
+
+
